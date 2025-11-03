@@ -48,16 +48,11 @@ function renderGame() {
 }
 
 function newCard() {
-  isAlive = true;
-  hasBlackJack = false;
   if (isAlive === true && hasBlackJack === false) {
     let card = getRandomCard();
     sum = sum + card;
     cards.push(card);
     console.log(cards);
-  } else if (isAlive === false && hasBlackJack === true) {
-    return 0;
+    renderGame();
   }
-
-  renderGame();
 }
