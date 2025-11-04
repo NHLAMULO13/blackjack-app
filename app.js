@@ -10,7 +10,11 @@ let cardsEl = document.querySelector("#cards-el");
 let player = {
   name: "Lolo ",
   chips: 145,
+  sayHello: function () {
+    console.log("Hello");
+  },
 };
+player.sayHello();
 
 let playerEl = document.getElementById("player-el");
 playerEl.textContent = player.name + ": $" + player.chips;
